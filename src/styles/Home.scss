@@ -1,0 +1,220 @@
+
+
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: auto;
+    width: 100%;
+    .main-section {
+        position: relative;
+        height: auto;
+        width: 90%;
+        margin-bottom: 10px;
+        .slider-thing  {
+            position: relative;
+            .slide {
+                height: 70vh;    
+                img {
+                    border-bottom-left-radius: 50px;
+                    width: 100%;
+                }
+            }
+        }
+        .overlay {
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.292);
+            .main-text {
+                position: absolute;
+                top: 130px;
+                left: 100px;
+                width: 50%;
+                h1 {
+                    font-size: 5rem;
+                }
+                p {
+                    color: white;
+                    font-size: 1.3rem;
+                }
+
+            }
+
+        }
+
+
+
+    }
+
+    
+    .main-subinfo  {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        width: 90%;
+        color: var(--gold-yellow);
+
+        span {
+            h3 {
+                font-size: 1.8rem;
+                margin-bottom: 10px;
+                color: inherit;
+            }
+            p {
+                color: white;
+            }
+        }
+    }
+
+
+    .our-mission-section {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 20px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        min-height: 300px;
+        height: auto;
+
+        gap: 30px;
+
+
+        //background-color: red;
+
+        .mission-left {
+            height: 80%;
+            width: 50%;
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+                color: white;
+            }
+            p {
+                color: var(--gold-yellow);
+
+            }
+        }
+
+        img {
+            width: 40%;
+        }
+    }
+
+
+
+
+    .about-us-section {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px;
+        padding-bottom: 50px;
+        height: auto;
+        width: 100%;
+
+
+
+        .about-us-container {
+            position: relative;
+            display: flex;
+            height: inherit;
+            width: 90%;
+
+
+
+            .about-us-left {
+                position: relative;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+
+                height: 100%;
+                width: 50%;
+
+
+                .grid-item {
+                    position: relative;
+                    height: 100%;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                } 
+                .image-large {
+                  grid-column: span 3; /* Span across all 3 columns */
+                  height: 200px;
+                }     
+                .grid-item:nth-child(2) {
+                  grid-column: span 1;
+                  grid-row: 2; /* Moves this element to the second row */
+                  height: 200px;
+
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 20px;
+
+
+                  background-color: var(--gold-yellow);
+
+                  h2 {
+                    font-size: 5rem;
+                    font-weight: bolder;
+                    color: black;
+                  }
+                  p {
+                    font-weight: bolder;
+                    color: black;
+                  }
+                }
+                .image-small {
+                  grid-column: span 2; /* Span across the remaining 2 columns */
+                  grid-row: 2; /* Place it on the same row as the second item */
+                  height: 200px;
+                }
+            }
+            .about-us-right {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                justify-content: center;
+                width: 45%;
+                padding-left: 25px;
+
+                h2 {
+                    font-size: 2.3rem;
+                    color: white;
+                }
+
+                p {
+                    margin-top: 20px;
+                    font-size: 0.9rem;
+                    line-height: 25px;
+                    color: var(--gold-yellow);
+                }
+            }
+        }
+    }
+
+
+   
+  
+
+
+   
+    
+    
+}
