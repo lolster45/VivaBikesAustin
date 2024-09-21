@@ -79,7 +79,7 @@ const ContactForm = () => {
     <section className='contact-form-container'>
 
         <div className="form-left">
-            <h1>Need more info?</h1>
+            <h1>Need a bike or want to donate one?</h1>
             <p>If you have any questions about our project, or would like to get involved, please feel free to reach out.  We are running this out of our garage at the moment,  but would like to turn it into something bigger -- to reach even more kids! </p>
         </div>
 

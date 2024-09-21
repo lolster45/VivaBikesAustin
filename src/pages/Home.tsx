@@ -10,6 +10,10 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 
+//React observer...
+import { useInView } from 'react-intersection-observer';
+
+
 //Styles... 
 import '../styles/Home.scss'
 import ContactForm from '../components/Contact';
@@ -28,6 +32,8 @@ const Home = () => {
 
     };
 
+
+    const { ref, inView } = useInView({threshold: 0.1, triggerOnce: true});
 
     return (
         <div className='home-page'>
@@ -56,19 +62,27 @@ const Home = () => {
 
             <div className='main-subinfo'>
                     <span>
-                        <h3>$1,000</h3>
+                        <div>
+                            <NumberCounter targetNumber={1000} duration={1} number={'number'}  />
+                        </div>
                         <p>Funds Raised</p>
                     </span>
                     <span>
-                        <h3>2</h3>
+                        <div>
+                            <NumberCounter targetNumber={3}duration={400} number={'number'} />
+                        </div>
                         <p>Dedicated Volunteers</p>
                     </span>
                     <span>
-                        <h3>100%</h3>
+                        <div>
+                            <NumberCounter targetNumber={100}duration={400} number={'number'} />%
+                        </div>
                         <p>Delivered Donations</p>
                     </span>
                     <span>
-                        <h3>3+</h3>
+                        <div>
+                            <NumberCounter targetNumber={3} duration={400} number={'number'} />+
+                        </div>
                         <p>Media Mention</p>
                     </span>
             </div>
@@ -117,6 +131,31 @@ const Home = () => {
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi est quo, tempore maiores ex voluptates blanditiis hic, cumque assumenda soluta facilis modi maxime ipsam autem, quis minus adipisci? Eius, praesentium.</p>
                     </div>
 
+                </div>
+            </section>
+
+
+            <section className="process-section">
+                <h2>The Process</h2>
+                <div>
+                    <div className="process-card">
+                        <span>Step 1</span>
+                        <img src="/broken-bike.png" alt="" />
+                        <h2>Find Broken Bike</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ad quidem nihil perspiciatis repudiandae dolor tempora voluptatibus aperiam amet explicabo! Accusantium quae maiores eaque ab cupiditate. Facilis aliquam quisquam illo.</p>
+                    </div>
+                    <div className="process-card">
+                        <span>Step 2</span>
+                        <img className='fix-image' src="/fix-broken-bike.png" alt="" />
+                        <h2>Fix it!</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, numquam corrupti incidunt harum modi voluptatum. Debitis, corrupti possimus ex fuga dolor sequi quod laudantium aliquam inventore aut tenetur adipisci nesciunt!</p>
+                    </div>
+                    <div className="process-card">
+                        <span>Step 3</span>
+                        <img src="https://images.vexels.com/content/143399/preview/gift-cartoon-icons-c6eff9.png" alt="" />
+                        <h2>Give Away</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam est soluta, accusamus adipisci, voluptate laudantium incidunt at exercitationem corrupti numquam sed temporibus repudiandae odit. Recusandae quis ex placeat eligendi nisi!</p>
+                    </div>
                 </div>
             </section>
 
