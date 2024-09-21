@@ -107,7 +107,7 @@ const Inventory = () => {
                     filteredItems.map(bike => {
                         return (
                             <div key={bike.id} className="card">
-                                <img src="https://media.diamondback.com/wysiwyg/MY24_Haanjo_4EXP_Profile-sm.jpg" alt="" />
+                                <img src="/bikeImage.jpg" alt="" />
                                 <div className='card-bottom'>
                                     <div className='brand'>{bike.brand}</div>
                                     <h2 className='model'>{bike.model}</h2>

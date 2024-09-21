@@ -99,7 +99,7 @@ const Home = () => {
                         Dad (a bicycle mechanic) and daughter (Lucero, 11 years old) fix, tune, wash, and test ride every single bike that we give away.  We are trying to get 100 (or more!) bikes to kids by the end of the summer, totally for free.
                     </p>
                 </div>
-                <img src="https://vivabikesaustin.org/About%20_%20100BikesForKids_files/IMG_20201009_125438772_HDR.jpg" alt="" />
+                <img src="/family.jpg" alt="" />
             </section>
             
 
@@ -109,7 +109,7 @@ const Home = () => {
                     <div className="about-us-left">
                         <div className="grid-item image-large">
                             <img 
-                                src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg" 
+                                src="/elephant.jpg" 
                                 alt="Large Image" 
                             />
                         </div>
@@ -119,7 +119,7 @@ const Home = () => {
                         </div>
                         <div className="grid-item image-small">
                             <img 
-                                src="https://images.squarespace-cdn.com/content/v1/57f4717846c3c46d4a4bf475/1668120993782-30TW7O8IRN1QSD6LQT88/IMG_7700.JPG" 
+                                src="/candy.jpg" 
                                 alt="Small Image"
                             />
                         </div>
@@ -152,7 +152,7 @@ const Home = () => {
                     </div>
                     <div className="process-card">
                         <span>Step 3</span>
-                        <img src="https://images.vexels.com/content/143399/preview/gift-cartoon-icons-c6eff9.png" alt="" />
+                        <img src="/present.png" alt="" />
                         <h2>Give Away</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam est soluta, accusamus adipisci, voluptate laudantium incidunt at exercitationem corrupti numquam sed temporibus repudiandae odit. Recusandae quis ex placeat eligendi nisi!</p>
                     </div>
