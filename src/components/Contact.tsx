@@ -1,7 +1,7 @@
 //React...
 import { useState } from 'react';
 
-import { sendForm } from '@emailjs/browser';
+//import { sendForm } from '@emailjs/browser';
 
 
 
@@ -50,7 +50,7 @@ const ContactForm = () => {
           //setEmailIsInvalid(true);
           return;
         }
-        sendEmail(e);
+        //sendEmail(e);
         //setEmailIsInvalid(false);
          setFormData({
            from_email: '',
@@ -60,20 +60,20 @@ const ContactForm = () => {
       }
     };
 
-    const sendEmail = async (e: any) => {
-      try {
-        await sendForm(
-            'service_50xi2u4',
-            'template_m1oqvw5',
-            e.target,
-            "V19aGRH_RgVYiOgI_"
-        );
-        console.log('Email sent successfully');
-      }
-      catch (error) {
-        console.error('Error sending email:', error);
-      }
-    };
+    // const sendEmail = async (e: any) => {
+    //   try {
+    //     await sendForm(
+    //         'service_50xi2u4',
+    //         'template_m1oqvw5',
+    //         e.target,
+    //         "V19aGRH_RgVYiOgI_"
+    //     );
+    //     console.log('Email sent successfully');
+    //   }
+    //   catch (error) {
+    //     console.error('Error sending email:', error);
+    //   }
+    // };
 
 
 
