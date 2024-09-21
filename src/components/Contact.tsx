@@ -6,10 +6,10 @@ import { sendForm } from '@emailjs/browser';
 
 
 //React interasection observer...
-import { useInView } from 'react-intersection-observer';
+//import { useInView } from 'react-intersection-observer';
 
 //React icons...
-import { RiErrorWarningFill } from "react-icons/ri";
+//import { RiErrorWarningFill } from "react-icons/ri";
 
 // styles...
 import '../styles/ContactComp.scss'
@@ -22,7 +22,9 @@ interface EmailTemplate {
 }
 
 const ContactForm = () => {
-    const [emailIsInvalid, setEmailIsInvalid] = useState<boolean>(false);
+
+
+    //const [emailIsInvalid, setEmailIsInvalid] = useState<boolean>(false);
 
     const [formData, setFormData] = useState<EmailTemplate>({
       from_email: '',
@@ -45,11 +47,11 @@ const ContactForm = () => {
       if(formData.from_email && formData.from_name && formData.message) {
 
         if(!emailPattern.test(formData.from_email)) {
-          setEmailIsInvalid(true);
+          //setEmailIsInvalid(true);
           return;
         }
         sendEmail(e);
-        setEmailIsInvalid(false);
+        //setEmailIsInvalid(false);
          setFormData({
            from_email: '',
            from_name: '',

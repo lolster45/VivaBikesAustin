@@ -1,5 +1,5 @@
 //React...
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 //Styles...
 import '../styles/FAQ.scss'
@@ -51,7 +51,7 @@ const FAQ = () => {
       
       
 
-    const [activeIndex, setActiveIndex] = useState(null);
+    const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     const handleToggle = (index: number) => {
         setActiveIndex(activeIndex === index ? null : index);
@@ -61,7 +61,7 @@ const FAQ = () => {
         <div className="faq-page">
 
             <h1>Frequently Asked Questions</h1>
-            
+
             <div className="faq-list">
                 {faqData.map((item, index) => (
                     <div key={index} className="faq-item">

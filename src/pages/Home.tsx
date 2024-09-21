@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 
 //Components...
 import NumberCounter from '../components/NumberCounter';
@@ -11,7 +11,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 
 //React observer...
-import { useInView } from 'react-intersection-observer';
+//import { useInView } from 'react-intersection-observer';
 
 
 //Styles... 
@@ -33,7 +33,7 @@ const Home = () => {
     };
 
 
-    const { ref, inView } = useInView({threshold: 0.1, triggerOnce: true});
+    //const { ref, inView } = useInView({threshold: 0.1, triggerOnce: true});
 
     return (
         <div className='home-page'>

@@ -1,7 +1,7 @@
 //React...
-import React, {useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 
-const NumberCounter = ({ targetNumber, duration, number }) => {
+const NumberCounter = ({ targetNumber, duration, number }: {targetNumber: number, duration: number, number: string}) => {
     const [count, setCount] = useState(0);
   
     useEffect(() => {
