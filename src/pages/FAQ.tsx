@@ -50,7 +50,6 @@ const FAQ = () => {
     ];
       
       
-
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     const handleToggle = (index: number) => {

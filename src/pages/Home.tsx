@@ -42,13 +42,13 @@ const Home = () => {
 
                 <Slider {...settings} className='slider-thing'>
                     <div className="slide">
-                        <img src="https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_1000%2Cq_80%2Cw_1920/znpmn174qnwmxaetjgti/HowtoBuyaBike_kids_banner1920x1000.jpg" alt="Slide 1" />
+                        <img src="/kidBike1.jpg" alt="Slide 1" />
                     </div>
                     <div className="slide">
-                        <img src="https://images.squarespace-cdn.com/content/v1/595ea7d6e58c62dce01d1625/1589845652981-A4R1L51B2VMJRDTT6M7P/Youth%2Bbike%2Briders%2BMS.jpg" alt="Slide 2" />
+                        <img src="/kidBike2.jpg" alt="Slide 2" />
                     </div>
                     <div className="slide">
-                        <img src="https://forthbikes.com/wp-content/uploads/2023/10/banner-002-1-scaled.jpg" alt="Slide 3" />
+                        <img src="/kidBike3.jpg" alt="Slide 3" />
                     </div>     
                 </Slider>
                 <div className='overlay'>
@@ -59,7 +59,6 @@ const Home = () => {
                 </div>
                 
             </section>
-
             <div className='main-subinfo'>
                     <span>
                         <div>
@@ -85,9 +84,7 @@ const Home = () => {
                         </div>
                         <p>Media Mention</p>
                     </span>
-            </div>
-
-            
+            </div>   
             <section className="our-mission-section">
                 <div className='mission-left'>
                     <h1>Who We Are?</h1>
